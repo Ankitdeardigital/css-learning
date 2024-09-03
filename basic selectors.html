@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+        
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+        
+        /* ID Selector */
+        #unique {
+            font-weight: bold;
+        }
+        
+        /* Descendant Selector */
+        div p {
+            margin-left: 20px;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 1px solid black;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color: red;
+        }
+        
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph.</p>
+    <p class="highlight">This paragraph is highlighted.</p>
+    <p id="unique">This paragraph has a unique style.</p>
+    <div>
+        <p>This is a child paragraph inside a div.</p>
+    </div>
+    <input type="text" placeholder="Type here">
+    <a href="#">Hover over me</a>
+</body>
+</html>

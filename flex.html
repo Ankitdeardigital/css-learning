@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: #f0f0f0;
+        }
+
+        .flex-item {
+            background-color: #4caf50;
+            color: white;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            height: 100px;
+        }
+
+        .flex-grow {
+            flex-grow: 2; /* Grows twice as much as other items */
+        }
+
+        .flex-shrink {
+            flex-shrink: 1; /* Shrinks if necessary */
+        }
+
+        .flex-basis {
+            flex-basis: 150px; /* Starts with a basis of 150px */
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item flex-grow">Item 1 (Grow)</div>
+        <div class="flex-item flex-basis">Item 2 (Basis)</div>
+        <div class="flex-item flex-shrink">Item 3 (Shrink)</div>
+    </div>
+</body>
+</html>
